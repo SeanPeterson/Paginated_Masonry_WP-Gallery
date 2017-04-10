@@ -1,0 +1,62 @@
+
+/*PAGINATION*/
+.required-pagination{
+	border-top: 1px solid #E6E6E6;
+	margin-top: 2rem;
+	padding-top: 1rem;
+}
+
+.fixed{
+	z-index: 10 !important; /*Allow image to overlap the nav-bar*/
+}
+
+/*MASONRY*/
+
+.gallery-item img{
+	position: relative;
+	width: 100%;
+}
+
+.gallery-caption {
+	display: none;
+}
+
+
+.gallery-item:hover .gallery-caption{
+	background: rgba(255, 255, 255, .8);
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	margin-bottom: 5px;
+	display: inline;
+}
+
+.gallery-item{
+	margin: 0 !important;
+}
+
+/*Overwrite the inline styles applied by masonry */
+@media screen and (max-width: 925px) {
+	.gallery-item{
+		position: relative !important;
+		left: inherit !important;
+		right: inherit !important;
+		top: inherit !important;
+		bottom: inherit !important;
+		width: 100% !important;
+	}
+}
+
+.gallery-item img{
+	display: block;
+	margin-bottom: 5px;
+	border: none !important;
+}
+
+
+.grid-sizer,
+.grid-item { width: 100%; }
+/* 2 columns wide */
+.grid-item--width2 { width: 40%; }
